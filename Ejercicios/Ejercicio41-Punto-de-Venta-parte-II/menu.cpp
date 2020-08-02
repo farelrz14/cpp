@@ -2,8 +2,6 @@
 
 using namespace std;
 
-extern void productos(int opcion);
-
 void menu(){
 
  int opcion = 0;
@@ -30,8 +28,6 @@ void menu(){
         {
             break;
         }
-
-        productos(opcion);
         
 
     }
