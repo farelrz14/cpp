@@ -2,13 +2,17 @@
 
 using namespace std;
 
-void menu(){
+extern void productos(int opcion);
+extern void imprimirFactura();
 
- int opcion = 0;
+void menu()
+{
+
+    int opcion = 0;
 
     while (true)
     {
-        system ("cls");
+        system("cls");
 
         cout << "****";
         cout << "MENU";
@@ -20,23 +24,33 @@ void menu(){
         cout << "1 - Bebidas Calientes" << endl;
         cout << "2 - Bebidas Frias" << endl;
         cout << "3 - Reposteria" << endl;
+        cout << "4 - Imprimir Factura" << endl;
         cout << "0 - Salir" << endl;
 
+        cout << endl;
+        cout << "Ingrese una opcion: ";
         cin >> opcion;
 
-        if (opcion = 0)
+        if (opcion == 0)
         {
             break;
         }
+        if (opcion == 4)
+        {
+           imprimirFactura(); 
+        }else
+        {
+          productos(opcion);   
+        }
+        
+        
+
+        
+        
         
 
     }
-
-
-
-
-
-
+    
 
 
 

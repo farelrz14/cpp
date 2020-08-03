@@ -4,13 +4,14 @@ using namespace std;
 
 extern void productos(int opcion);
 
-void menu(){
+void menu()
+{
 
- int opcion = 0;
+    int opcion = 0;
 
     while (true)
     {
-        system ("cls");
+        system("cls");
 
         cout << "****";
         cout << "MENU";
@@ -26,21 +27,17 @@ void menu(){
 
         cin >> opcion;
 
-        if (opcion = 0)
+        if (opcion == 0)
         {
             break;
         }
 
         productos(opcion);
         
+        
 
     }
-
-
-
-
-
-
+    
 
 
 
